@@ -1,0 +1,27 @@
+[user]
+	name = Cezary Krzyżanowski
+	email = cezary.krzyzanowski@contractors.roche.com
+[core]
+	editor = nvim
+[advice]
+	detachedHead = false
+[sequence]
+	editor = nvim
+[diff]
+	tool = vimdiff
+[difftool "vimdiff"]
+	path = nvim
+[merge]
+	tool = vimdiff
+[mergetool "vimdiff"]
+	path = nvim
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+[credential]
+	helper = cache --timeout 7200
+	helper = osxkeychain
+	helper = oauth
+[gitlab "code.roche.com/api/v4"]
+	user = cezary.krzyzanowski@contractors.roche.com
