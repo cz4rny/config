@@ -133,11 +133,13 @@ eval "$(starship init zsh)"
 alias vim='nvim'
 EDITOR=nvim
 
+alias python=/opt/homebrew/bin/python3
+alias pip=/opt/homebrew/bin/pip3
 alias urldecode='python3 -c "import sys, urllib.parse as ul; \
   print(ul.unquote_plus(sys.argv[1]))"'
 alias urlencode='python3 -c "import sys, urllib.parse as ul; \
     print (ul.quote_plus(sys.argv[1]))"'
-PATH="$HOME/.config/emacs/bin:$PATH"
+
 alias ls='exa --long --group --color always --icons --all --git'
 # alias ls='lsd --long --almost-all --group-directories-first --versionsort --total-size'
 alias cat='bat'
@@ -146,5 +148,8 @@ alias top='htop'
 alias find='fd'
 alias df='duf'
 alias man'tldr'
+PATH="$HOME/.config/emacs/bin:$PATH"
 alias emacs='emacsclient -c -n -a "emacs"'
 alias config='/usr/bin/git --git-dir=/Users/krzyzanc/.cfg/ --work-tree=/Users/krzyzanc'
+
+
