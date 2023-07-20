@@ -137,7 +137,7 @@ alias urldecode='python3 -c "import sys, urllib.parse as ul; \
   print(ul.unquote_plus(sys.argv[1]))"'
 alias urlencode='python3 -c "import sys, urllib.parse as ul; \
     print (ul.quote_plus(sys.argv[1]))"'
-PATH="$HOME/.cargo/bin:$HOME/.config/emacs/bin:$PATH"
+PATH="$HOME/.config/emacs/bin:$PATH"
 alias ls='exa --long --group --color always --icons --all --git'
 # alias ls='lsd --long --almost-all --group-directories-first --versionsort --total-size'
 alias cat='bat'
