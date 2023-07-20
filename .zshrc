@@ -153,3 +153,5 @@ alias emacs='emacsclient -c -n -a "emacs"'
 alias config='/usr/bin/git --git-dir=/Users/krzyzanc/.cfg/ --work-tree=/Users/krzyzanc'
 
 
+# Automatically load .env files
+eval "$(direnv hook zsh)"
