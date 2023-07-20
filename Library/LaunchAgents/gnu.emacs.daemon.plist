@@ -6,7 +6,7 @@
     <string>gnu.emacs.daemon</string>
     <key>ProgramArguments</key>
     <array>
-      <string>/usr/local/Cellar/emacs-plus@28/28.2/Emacs.app/Contents/MacOS/Emacs</string>
+      <string>/opt/homebrew/bin/emacs</string>
       <string>--fg-daemon</string>
     </array>
     <key>RunAtLoad</key>
