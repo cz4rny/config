@@ -131,10 +131,11 @@ eval "$(starship init zsh)"
 
 
 alias vim='nvim'
-EDITOR=nvim
+export EDITOR=nvim
+export XDG_CONFIG_HOME="$HOME/.config"
 
-alias python=/opt/homebrew/bin/python3
-alias pip=/opt/homebrew/bin/pip3
+# alias python=/opt/homebrew/bin/python3
+# alias pip=/opt/homebrew/bin/pip3
 alias urldecode='python3 -c "import sys, urllib.parse as ul; \
   print(ul.unquote_plus(sys.argv[1]))"'
 alias urlencode='python3 -c "import sys, urllib.parse as ul; \
@@ -151,7 +152,10 @@ alias man'tldr'
 PATH="$HOME/.config/emacs/bin:$PATH"
 alias emacs='emacsclient -c -n -a "emacs"'
 alias config='/usr/bin/git --git-dir=/Users/krzyzanc/.cfg/ --work-tree=/Users/krzyzanc'
+alias fixgit="git config remote.origin.fetch 'refs/heads/*:refs/origin/heads/*'"
 
 
 # Automatically load .env files
 eval "$(direnv hook zsh)"
+
+export PATH="$PATH:$(go env GOPATH)/bin"
