@@ -3,16 +3,36 @@
 	email = cezary.krzyzanowski@contractors.roche.com
 [core]
 	editor = nvim
+	pager = delta
+[interactive]
+    diffFilter = delta --color-only --features=interactive
+[delta]
+    features = decorations my-dark-theme zebra-dark
+    navigate = true
+    line-numbers = true
+    side-by-side = true
+[delta "interactive"]
+    keep-plus-minus-markers = false
+[delta "decorations"]
+    commit-decoration-style = blue ol
+    commit-style = raw
+    file-style = omit
+    hunk-header-decoration-style = blue box
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
 [advice]
 	detachedHead = false
 [sequence]
 	editor = nvim
 [diff]
 	tool = vimdiff
+  colorMoved = default
 [difftool "vimdiff"]
 	path = nvim
 [merge]
 	tool = vimdiff
+  conflictstyle = diff3
 [mergetool "vimdiff"]
 	path = nvim
 [pull]
