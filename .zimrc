@@ -34,6 +34,7 @@ zmodule joke/zim-rtx
 zmodule https://github.com/cpitt/zsh-dotenv
 zmodule joke/zim-yq
 zmodule kiesman99/zim-zoxide
+zmodule micha/resty
 
 
 #
